@@ -27,4 +27,5 @@ plotlyjs()
 
 
 # Import System
-#sys = System() Need to find a dataset for the system
+sys_DA = build_system(PSISystems, "modified_RTS_GMLC_DA_sys") # Day Ahead System
+sys_RT = build_system(PSISystems, "modified_RTS_GMLC_RT_sys") # Real Time System
