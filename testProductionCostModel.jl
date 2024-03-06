@@ -29,3 +29,10 @@ plotlyjs()
 # Import System
 sys_DA = build_system(PSISystems, "modified_RTS_GMLC_DA_sys") # Day Ahead System
 sys_RT = build_system(PSISystems, "modified_RTS_GMLC_RT_sys") # Real Time System
+
+# Defining unit committment for Day Ahead problem
+"""
+template_uc = template_unit_commitment()
+set_device_model!(template_uc, ThermalStandard, ThermalStandardUnitCommitment)
+set_device_model!(template_uc, HydroDispatch, HydroDispatchRunOfRiver)
+"""
